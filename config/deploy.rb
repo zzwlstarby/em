@@ -1,12 +1,23 @@
-set :application, "entmonitor"
-set :repository,  "set your repository location here"
 
-set :scm, :subversion
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+set :application, "em"
+set :repository,  "git://github.com/sorrycc/em.git"
+set :domain,"10.232.36.159"
 
-role :web, "10.232.36.159"                          # Your HTTP server, Apache/etc
-role :app, "10.232.36.159"                          # This may be the same as your `Web` server
-role :db,  "10.232.36.159", :primary => true # This is where Rails migrations will run
+default_run_options[:pty] = true
+set :use_sudo, false
+set :scm, :git
+set :user, "yunqian"
+set :deploy_to, "/home/yunqian/sites/#{application}"
+set :branch, "master"
+set :rails_env, 'production'
+
+role :web, domain
+role :app, domain
+role :db,  domain, :primary => true
+
+# set :rvm_path,"~/.rvm"
+# set :rvm_bin_path,"~/.rvm/bin"
+# set :rvm_ruby_string,'ruby-1.9.3'
 
 # if you want to clean up old releases on each deploy uncomment this:
 # after "deploy:restart", "deploy:cleanup"
