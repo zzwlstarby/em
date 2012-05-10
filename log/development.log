@@ -1,0 +1,337 @@
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/apps/" for 127.0.0.1 at 2012-05-10 15:19:51 +0800
+Processing by AppsController#index as HTML
+MONGODB (46ms) em_development['system.namespaces'].find({})
+MONGODB (1493ms) em_development['$cmd'].find({:create=>"apps"}).limit(-1)
+MONGODB (9ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (1553.8ms)
+Compiled apps.css  (7ms)  (pid 27356)
+Compiled scaffolds.css  (9ms)  (pid 27356)
+Compiled application.css  (51ms)  (pid 27356)
+Compiled jquery.js  (1ms)  (pid 27356)
+Compiled jquery_ujs.js  (0ms)  (pid 27356)
+Compiled apps.js  (118ms)  (pid 27356)
+Compiled application.js  (168ms)  (pid 27356)
+Completed 200 OK in 2241ms (Views: 2240.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-10 15:19:54 +0800
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-10 15:19:54 +0800
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/apps.css?body=1" for 127.0.0.1 at 2012-05-10 15:19:54 +0800
+Served asset /apps.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-10 15:19:54 +0800
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-10 15:19:54 +0800
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/apps.js?body=1" for 127.0.0.1 at 2012-05-10 15:19:54 +0800
+Served asset /apps.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-10 15:19:54 +0800
+Served asset /application.js - 200 OK (5ms)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+MONGODB (0ms) em_development['system.namespaces'].find({})
+MONGODB (28ms) em_development['$cmd'].find({"count"=>"apps", "query"=>{}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) em_development['apps'].remove({})
+MONGODB (0ms) em_development['apps'].insert([{"key"=>"taobaofp", "title"=>"淘宝首页", "keywords"=>"淘宝首页 淘宝网首页", "sites"=>"weibo", "filters"=>"问题 出错 奇怪 打不开 为什么 艹 妈的 没法 没办法 undefined 烦银 烦人 坑爹 不知所谓", "blacklist"=>"跟我去旅行", "_id"=>"taobaofp"}])
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/apps/" for 127.0.0.1 at 2012-05-10 15:21:07 +0800
+Processing by AppsController#index as HTML
+MONGODB (0ms) em_development['system.namespaces'].find({})
+MONGODB (0ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-10 15:21:07 +0800
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-10 15:21:08 +0800
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/apps.css?body=1" for 127.0.0.1 at 2012-05-10 15:21:08 +0800
+Served asset /apps.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-10 15:21:08 +0800
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/apps.js?body=1" for 127.0.0.1 at 2012-05-10 15:21:08 +0800
+Served asset /apps.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-10 15:21:08 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-10 15:21:08 +0800
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/apps/taobaofp" for 127.0.0.1 at 2012-05-10 15:21:19 +0800
+Processing by AppsController#show as HTML
+  Parameters: {"id"=>"taobaofp"}
+MONGODB (0ms) em_development['apps'].find({:_id=>"taobaofp"}).limit(-1).sort([[:_id, :asc]])
+  Rendered apps/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-10 15:21:19 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/apps.css?body=1" for 127.0.0.1 at 2012-05-10 15:21:19 +0800
+Served asset /apps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-10 15:21:19 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-10 15:21:19 +0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-10 15:21:19 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-10 15:21:19 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/apps.js?body=1" for 127.0.0.1 at 2012-05-10 15:21:19 +0800
+Served asset /apps.js - 304 Not Modified (0ms)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/apps/" for 127.0.0.1 at 2012-05-10 15:32:09 +0800
+Processing by AppsController#index as HTML
+MONGODB (0ms) em_development['system.namespaces'].find({})
+MONGODB (0ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (5.7ms)
+Compiled apps.css  (3ms)  (pid 28038)
+Compiled scaffolds.css  (5ms)  (pid 28038)
+Compiled application.css  (15ms)  (pid 28038)
+Compiled jquery.js  (1ms)  (pid 28038)
+Compiled jquery_ujs.js  (0ms)  (pid 28038)
+Compiled apps.js  (146ms)  (pid 28038)
+Compiled application.js  (161ms)  (pid 28038)
+Completed 200 OK in 228ms (Views: 227.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-10 15:32:10 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/apps.css?body=1" for 127.0.0.1 at 2012-05-10 15:32:10 +0800
+Served asset /apps.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/apps.js?body=1" for 127.0.0.1 at 2012-05-10 15:32:10 +0800
+Served asset /apps.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-10 15:32:10 +0800
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-10 15:32:10 +0800
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/helloworld.txt" for 127.0.0.1 at 2012-05-10 15:32:35 +0800
+Served asset /helloworld.txt - 200 OK (36ms)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-05-10 15:42:15 +0800
+Served asset /jquery.js - 200 OK (10ms)
+
+
+Started GET "/apps/" for 127.0.0.1 at 2012-05-10 15:49:08 +0800
+Processing by AppsController#index as HTML
+MONGODB (0ms) em_development['system.namespaces'].find({})
+MONGODB (0ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-10 15:49:08 +0800
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-10 15:49:08 +0800
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/apps.css?body=1" for 127.0.0.1 at 2012-05-10 15:49:08 +0800
+Served asset /apps.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-10 15:49:08 +0800
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/apps.js?body=1" for 127.0.0.1 at 2012-05-10 15:49:08 +0800
+Served asset /apps.js - 200 OK (1ms)
+
+
+Started GET "/apps/" for 127.0.0.1 at 2012-05-10 15:49:10 +0800
+Processing by AppsController#index as HTML
+MONGODB (0ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apps/" for 127.0.0.1 at 2012-05-10 15:49:30 +0800
+Processing by AppsController#index as HTML
+MONGODB (0ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/apps.js?body=1" for 127.0.0.1 at 2012-05-10 15:49:53 +0800
+Served asset /apps.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-10 15:49:55 +0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-10 15:50:01 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/apps.css?body=1" for 127.0.0.1 at 2012-05-10 15:50:07 +0800
+Served asset /apps.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-10 15:50:10 +0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/apps/" for 127.0.0.1 at 2012-05-10 15:50:51 +0800
+Processing by AppsController#index as HTML
+MONGODB (0ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apps/" for 127.0.0.1 at 2012-05-10 15:50:52 +0800
+Processing by AppsController#index as HTML
+MONGODB (0ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/apps/" for 127.0.0.1 at 2012-05-10 15:51:06 +0800
+Processing by AppsController#index as HTML
+MONGODB (0ms) em_development['system.namespaces'].find({})
+MONGODB (0ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 33ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apps/?debug_assets=1" for 127.0.0.1 at 2012-05-10 15:51:15 +0800
+Processing by AppsController#index as HTML
+  Parameters: {"debug_assets"=>"1"}
+MONGODB (0ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apps/?debug_assets=1" for 127.0.0.1 at 2012-05-10 15:51:16 +0800
+Processing by AppsController#index as HTML
+  Parameters: {"debug_assets"=>"1"}
+MONGODB (0ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apps/" for 127.0.0.1 at 2012-05-10 15:51:26 +0800
+Processing by AppsController#index as HTML
+MONGODB (0ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apps/" for 127.0.0.1 at 2012-05-10 15:51:42 +0800
+Processing by AppsController#index as HTML
+MONGODB (0ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apps/" for 127.0.0.1 at 2012-05-10 15:51:43 +0800
+Processing by AppsController#index as HTML
+MONGODB (0ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apps/?debug_assets=1" for 127.0.0.1 at 2012-05-10 15:51:46 +0800
+Processing by AppsController#index as HTML
+  Parameters: {"debug_assets"=>"1"}
+MONGODB (0ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apps/?debug_assets=1" for 127.0.0.1 at 2012-05-10 15:51:48 +0800
+Processing by AppsController#index as HTML
+  Parameters: {"debug_assets"=>"1"}
+MONGODB (0ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-10 15:51:56 +0800
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/apps/" for 127.0.0.1 at 2012-05-10 15:52:02 +0800
+Processing by AppsController#index as HTML
+MONGODB (0ms) em_development['apps'].find({})
+  Rendered apps/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)

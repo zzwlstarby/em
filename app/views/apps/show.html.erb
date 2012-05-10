@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Key:</b>
+  <%= @app.key %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @app.title %>
+</p>
+
+<p>
+  <b>Keywords:</b>
+  <%= @app.keywords %>
+</p>
+
+<p>
+  <b>Sites:</b>
+  <%= @app.sites %>
+</p>
+
+<p>
+  <b>Filters:</b>
+  <%= @app.filters %>
+</p>
+
+<p>
+  <b>Blacklist:</b>
+  <%= @app.blacklist %>
+</p>
+
+
+<%= link_to 'Edit', edit_app_path(@app) %> |
+<%= link_to 'Back', apps_path %>

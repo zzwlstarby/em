@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  key: MyString
+  title: MyString
+  keywords: MyString
+  sites: MyString
+  filters: MyString
+  blacklist: MyString
+
+two:
+  key: MyString
+  title: MyString
+  keywords: MyString
+  sites: MyString
+  filters: MyString
+  blacklist: MyString
